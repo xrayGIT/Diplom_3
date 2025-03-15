@@ -17,8 +17,8 @@ public class WebDriverFactory {
     private static final String WEBDRIVER_CHROME_DRIVER_PROPERTY = "webdriver.chrome.driver";
     private static final String BROWSER_PROPERTY = "browser";
     private static final String DEFAULT_BROWSER = "chrome";
-    private static final String YANDEX_BROWSER_PATH = "/Applications/Yandex.app/Contents/MacOS/Yandex";
-    private static final String YANDEX_CHROME_DRIVER_PATH = "/Users/paulpaul/YandexDriver/chromedriver";
+    private static final String YANDEX_BROWSER_PATH = "";
+    private static final String YANDEX_CHROME_DRIVER_PATH = "";
 
     public static WebDriver getWebDriver(){
         BrowserName browserName = getActiveBrowser();
