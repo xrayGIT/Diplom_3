@@ -1,25 +1,17 @@
-import browser.WebDriverFactory;
+
 import client.StellarburgersClient;
-import com.github.javafaker.Faker;
-import io.qameta.allure.Allure;
 import io.qameta.allure.Step;
-import io.qameta.allure.model.Status;
-import io.restassured.response.ValidatableResponse;
-import model.User;
+import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import pageobjectmodel.MainPage;
 import pageobjectmodel.RegistrationView;
 
 import static helper.Environment.BASE_URL;
-import static org.hamcrest.CoreMatchers.equalTo;
 
 
 public class RegistrationTest extends AbstractWebTest {
-    User user;
-    StellarburgersClient stellarburgersClient;
     Boolean skipUserDeletion;
 
     @Before
@@ -28,14 +20,11 @@ public class RegistrationTest extends AbstractWebTest {
     public void setUp(){
         super.setUp();
         skipUserDeletion = false;
-        Faker faker = new Faker();
-        String email = faker.internet().emailAddress();
-        String name = faker.name().firstName();
-        user = new User(email, "password", name);
         stellarburgersClient = new StellarburgersClient(BASE_URL);
     }
 
     @Test
+    @DisplayName("Регистрация нового пользователя")
     public void registerNewUserTest(){
 
         MainPage mainPage = new MainPage(driver);
@@ -48,6 +37,7 @@ public class RegistrationTest extends AbstractWebTest {
     }
 
     @Test
+    @DisplayName("Регистрация нового пользователя с коротким паролем не возможна")
     public void registerNewUser_InvalidPassTest(){
         user.setPassword("12345");
         MainPage mainPage = new MainPage(driver);
@@ -67,13 +57,7 @@ public class RegistrationTest extends AbstractWebTest {
     public void tearDown(){
         super.tearDown();
         if(!skipUserDeletion){
-            ValidatableResponse response = stellarburgersClient.loginUser(user, 200);
-            String token = response.extract().body().jsonPath().get("accessToken");
-            if(token != null){
-                stellarburgersClient.deleteUser(token, 202);
-            } else {
-                Allure.step("Удаление пользователя не возможно. Токен отсутствует, проверьте был ли он сгенерирован на предыдущих шагах", Status.BROKEN);
-            }
+            stellarburgersClient.deleteUser(user, 202);
         }
     }
 

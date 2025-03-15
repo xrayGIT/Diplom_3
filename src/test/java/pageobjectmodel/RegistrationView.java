@@ -6,14 +6,15 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 
-public class RegistrationView {
+public class RegistrationView{
     WebDriver driver;
-
     private static final By REGISTRATION_BUTTON = By.xpath(".//button[text()='Зарегистрироваться']");
     private static final By NAME_INPUT = By.xpath(".//label[text()='Имя']/parent::div/input");
     private static final By EMAIL_INPUT = By.xpath(".//label[text()='Email']/parent::div/input");
     private static final By PASSWORD_INPUT = By.xpath(".//label[text()='Пароль']/parent::div/input");
     private static final By INCORRECT_PASSWORD_MESSAGE = By.xpath("//p[text()='Некорректный пароль']");
+    private static final By ENTER_ACCOUNT_LINK = By.xpath(".//a[text()='Войти']");
+
 
     public RegistrationView(WebDriver driver){
         this.driver = driver;
@@ -33,5 +34,11 @@ public class RegistrationView {
         boolean isErrorMessageDisplayed = driver.findElement(INCORRECT_PASSWORD_MESSAGE).isDisplayed();
         Assert.assertTrue("Страница входа в аккаунт загружена", isErrorMessageDisplayed);
         return this;
+    }
+
+    @Step("Нажать на 'Войти'")
+    public LoginView clickEnterAccount(){
+        driver.findElement(ENTER_ACCOUNT_LINK).click();
+        return new LoginView(driver);
     }
 }

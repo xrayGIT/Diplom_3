@@ -1,6 +1,8 @@
 package client;
 
+import io.qameta.allure.Allure;
 import io.qameta.allure.Step;
+import io.qameta.allure.model.Status;
 import io.qameta.allure.restassured.AllureRestAssured;
 import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
@@ -42,6 +44,20 @@ public class StellarburgersClient {
                 .delete(USER_API)
                 .then();
         checkStatus(response, statusER);
+        return response;
+    }
+
+    @Step("Удаление пользователя")
+    public ValidatableResponse deleteUser(User user, int statusER) {
+        ValidatableResponse response = null;
+        String token = loginUser(user, 200).extract().body()
+                .jsonPath()
+                .get("accessToken");
+        if (token != null) {
+            response = deleteUser(token, statusER);
+        } else {
+            Allure.step("Удаление пользователя не возможно. Токен отсутствует, проверьте был ли он сгенерирован на предыдущих шагах", Status.BROKEN);
+        }
         return response;
     }
 

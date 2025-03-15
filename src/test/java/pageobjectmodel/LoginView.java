@@ -6,12 +6,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import java.util.concurrent.TimeUnit;
 
 
-public class LoginView {
+public class LoginView{
     WebDriver driver;
-
     private static final By SIGN_IN_LINK = By.className("Auth_link__1fOlj");
     private static final By EMAIL_INPUT = By.xpath(".//label[text()='Email']/parent::div/input");
     private static final By PASSWORD_INPUT = By.xpath(".//label[text()='Пароль']/parent::div/input");
