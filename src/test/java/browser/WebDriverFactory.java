@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
     *
     * для обеспечения работы яндекс браузера нужно
     *   - указать путь к драйверу в константе YANDEX_CHROME_DRIVER_PATH
-    *   - указать путь к браузеру Yandex. (необходимо для поддержки ARM процессоров где используется не нативный драйвер)
+    *   - указать путь к браузеру Yandex в константе YANDEX_BROWSER_PATH. (необходимо для поддержки ARM процессоров где используется не нативный драйвер)
  */
 
 public class WebDriverFactory {
