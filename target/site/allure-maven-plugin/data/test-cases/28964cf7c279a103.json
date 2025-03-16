@@ -1,0 +1,186 @@
+{
+  "uid" : "28964cf7c279a103",
+  "name" : "openTabTest[Переход на табу Соусы]",
+  "fullName" : "ConstructorTest.openTabTest[Переход на табу Соусы]",
+  "historyId" : "cbedbd5c805c1461459e2407a83a117d",
+  "time" : {
+    "start" : 1742117112608,
+    "stop" : 1742117114553,
+    "duration" : 1945
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Пререквизиты",
+      "time" : {
+        "start" : 1742117112610,
+        "stop" : 1742117113539,
+        "duration" : 929
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Открыть стартовую страницу",
+      "time" : {
+        "start" : 1742117113545,
+        "stop" : 1742117114349,
+        "duration" : 804
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Нажать на табу 'Соусы'",
+      "time" : {
+        "start" : 1742117114352,
+        "stop" : 1742117114393,
+        "duration" : 41
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "tab",
+        "value" : "Соусы"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Проверка. Таба 'Соусы' выбранна",
+      "time" : {
+        "start" : 1742117114393,
+        "stop" : 1742117114403,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "tab",
+        "value" : "Соусы"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Проверка. Ингридиент 'Соус Spicy-X' внутри окна браузера",
+      "time" : {
+        "start" : 1742117114403,
+        "stop" : 1742117114450,
+        "duration" : 47
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Проверка. Элемент отображается внутри окна браузера",
+        "time" : {
+          "start" : 1742117114410,
+          "stop" : 1742117114450,
+          "duration" : 40
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "driver",
+          "value" : "ChromeDriver: chrome on mac (70e928c07cb837831a38ff19831a9748)"
+        }, {
+          "name" : "element",
+          "value" : "[[ChromeDriver: chrome on mac (70e928c07cb837831a38ff19831a9748)] -> xpath: .//img[@alt='Соус Spicy-X']]"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "ingredientName",
+        "value" : "Соус Spicy-X"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Восстановление исходного состояния",
+      "time" : {
+        "start" : 1742117114450,
+        "stop" : 1742117114553,
+        "duration" : 103
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 7,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : ""
+  }, {
+    "name" : "testClass",
+    "value" : "ConstructorTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "openTabTest[Переход на табу Соусы]"
+  }, {
+    "name" : "suite",
+    "value" : "ConstructorTest"
+  }, {
+    "name" : "host",
+    "value" : "MacBook-Air-Paul.local"
+  }, {
+    "name" : "thread",
+    "value" : "23605@MacBook-Air-Paul.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "28964cf7c279a103.json",
+  "parameterValues" : [ ]
+}

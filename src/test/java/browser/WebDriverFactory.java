@@ -23,7 +23,7 @@ public class WebDriverFactory {
     public static WebDriver getWebDriver(){
         BrowserName browserName = getActiveBrowser();
         switch (browserName) {
-            case CHROME:
+            case CHROME: // для хром можно не указывать путь до драйвера
                 return new ChromeDriver();
             case YANDEX:
                 System.setProperty(WEBDRIVER_CHROME_DRIVER_PROPERTY, YANDEX_CHROME_DRIVER_PATH);

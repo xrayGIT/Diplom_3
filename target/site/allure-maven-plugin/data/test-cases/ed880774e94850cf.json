@@ -1,0 +1,396 @@
+{
+  "uid" : "ed880774e94850cf",
+  "name" : "loginUserTest[Со страницы RegistrationView через кнопку Войти]",
+  "fullName" : "LoginTest.loginUserTest[Со страницы RegistrationView через кнопку Войти]",
+  "historyId" : "837f94aecbb894204cd8a984037e3b25",
+  "time" : {
+    "start" : 1742117109076,
+    "stop" : 1742117112595,
+    "duration" : 3519
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Пререквизиты",
+      "time" : {
+        "start" : 1742117109076,
+        "stop" : 1742117110315,
+        "duration" : 1239
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Создание пользователя",
+        "time" : {
+          "start" : 1742117110016,
+          "stop" : 1742117110315,
+          "duration" : 299
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Проверка статус кода 200",
+          "time" : {
+            "start" : 1742117110314,
+            "stop" : 1742117110315,
+            "duration" : 1
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "response",
+            "value" : "io.restassured.internal.ValidatableResponseImpl@17d8a1da"
+          }, {
+            "name" : "statueER",
+            "value" : "200"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ {
+          "uid" : "a7f123dbca48e36d",
+          "name" : "Request",
+          "source" : "a7f123dbca48e36d.html",
+          "type" : "text/html",
+          "size" : 819
+        }, {
+          "uid" : "b550a3e9f9954509",
+          "name" : "HTTP/1.1 200 OK",
+          "source" : "b550a3e9f9954509.html",
+          "type" : "text/html",
+          "size" : 1278
+        } ],
+        "parameters" : [ {
+          "name" : "user",
+          "value" : "model.User@4f4e6a99"
+        }, {
+          "name" : "statusER",
+          "value" : "200"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 1,
+        "attachmentsCount" : 2,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 2,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Открыть страницу регистрации",
+      "time" : {
+        "start" : 1742117110322,
+        "stop" : 1742117111198,
+        "duration" : 876
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Нажать на 'Войти'",
+      "time" : {
+        "start" : 1742117111198,
+        "stop" : 1742117111254,
+        "duration" : 56
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Логин под пользователем shad.herzog@yahoo.com",
+      "time" : {
+        "start" : 1742117111255,
+        "stop" : 1742117111427,
+        "duration" : 172
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Заполнить email shad.herzog@yahoo.com",
+        "time" : {
+          "start" : 1742117111255,
+          "stop" : 1742117111347,
+          "duration" : 92
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "email",
+          "value" : "shad.herzog@yahoo.com"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Заполнить password password",
+        "time" : {
+          "start" : 1742117111347,
+          "stop" : 1742117111388,
+          "duration" : 41
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "pass",
+          "value" : "password"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Нажать войти",
+        "time" : {
+          "start" : 1742117111388,
+          "stop" : 1742117111425,
+          "duration" : 37
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "shad.herzog@yahoo.com"
+      }, {
+        "name" : "pass",
+        "value" : "password"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Проверка. Кнопка 'Оформить заказ' появилась",
+      "time" : {
+        "start" : 1742117111427,
+        "stop" : 1742117111570,
+        "duration" : 143
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Восстановление исходного состояния",
+      "time" : {
+        "start" : 1742117111570,
+        "stop" : 1742117112595,
+        "duration" : 1025
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Удаление пользователя",
+        "time" : {
+          "start" : 1742117111680,
+          "stop" : 1742117112595,
+          "duration" : 915
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Логин пользователя",
+          "time" : {
+            "start" : 1742117111680,
+            "stop" : 1742117111953,
+            "duration" : 273
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "Проверка статус кода 200",
+            "time" : {
+              "start" : 1742117111953,
+              "stop" : 1742117111953,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "response",
+              "value" : "io.restassured.internal.ValidatableResponseImpl@7c94a0dc"
+            }, {
+              "name" : "statueER",
+              "value" : "200"
+            } ],
+            "hasContent" : true,
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false
+          } ],
+          "attachments" : [ {
+            "uid" : "1bfb26cb64c075c8",
+            "name" : "Request",
+            "source" : "1bfb26cb64c075c8.html",
+            "type" : "text/html",
+            "size" : 813
+          }, {
+            "uid" : "833ff8e7ba3103f",
+            "name" : "HTTP/1.1 200 OK",
+            "source" : "833ff8e7ba3103f.html",
+            "type" : "text/html",
+            "size" : 1065
+          } ],
+          "parameters" : [ {
+            "name" : "user",
+            "value" : "model.User@4f4e6a99"
+          }, {
+            "name" : "statusER",
+            "value" : "200"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 1,
+          "attachmentsCount" : 2,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Удаление пользователя",
+          "time" : {
+            "start" : 1742117111992,
+            "stop" : 1742117112595,
+            "duration" : 603
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "Проверка статус кода 202",
+            "time" : {
+              "start" : 1742117112595,
+              "stop" : 1742117112595,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "response",
+              "value" : "io.restassured.internal.ValidatableResponseImpl@3ccb56bc"
+            }, {
+              "name" : "statueER",
+              "value" : "202"
+            } ],
+            "hasContent" : true,
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false
+          } ],
+          "attachments" : [ {
+            "uid" : "f10cf3cbbea491a6",
+            "name" : "Request",
+            "source" : "f10cf3cbbea491a6.html",
+            "type" : "text/html",
+            "size" : 838
+          }, {
+            "uid" : "3c551bc2d9edfbb5",
+            "name" : "HTTP/1.1 202 Accepted",
+            "source" : "3c551bc2d9edfbb5.html",
+            "type" : "text/html",
+            "size" : 643
+          } ],
+          "parameters" : [ {
+            "name" : "token",
+            "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDY5OGY2OWVkMjgwMDAxYjVhMDU4ZCIsImlhdCI6MTc0MjExNzExMSwiZXhwIjoxNzQyMTE4MzExfQ.AQUHvjQnRtF19udbIKOfShhIQ5jUhYRa1YVIheWa1Aw"
+          }, {
+            "name" : "statusER",
+            "value" : "202"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 1,
+          "attachmentsCount" : 2,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "user",
+          "value" : "model.User@4f4e6a99"
+        }, {
+          "name" : "statusER",
+          "value" : "202"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 4,
+        "attachmentsCount" : 4,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 5,
+      "attachmentsCount" : 4,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 16,
+    "attachmentsCount" : 6,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : ""
+  }, {
+    "name" : "testClass",
+    "value" : "LoginTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "loginUserTest[Со страницы RegistrationView через кнопку Войти]"
+  }, {
+    "name" : "suite",
+    "value" : "LoginTest"
+  }, {
+    "name" : "host",
+    "value" : "MacBook-Air-Paul.local"
+  }, {
+    "name" : "thread",
+    "value" : "23605@MacBook-Air-Paul.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ed880774e94850cf.json",
+  "parameterValues" : [ ]
+}

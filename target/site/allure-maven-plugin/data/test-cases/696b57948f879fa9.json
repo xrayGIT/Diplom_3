@@ -1,0 +1,186 @@
+{
+  "uid" : "696b57948f879fa9",
+  "name" : "openTabTest[Переход на табу Начинки]",
+  "fullName" : "ConstructorTest.openTabTest[Переход на табу Начинки]",
+  "historyId" : "720b34da1b39a8b9b63817750717444e",
+  "time" : {
+    "start" : 1742117116575,
+    "stop" : 1742117119237,
+    "duration" : 2662
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Пререквизиты",
+      "time" : {
+        "start" : 1742117116576,
+        "stop" : 1742117117503,
+        "duration" : 927
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Открыть стартовую страницу",
+      "time" : {
+        "start" : 1742117117516,
+        "stop" : 1742117118437,
+        "duration" : 921
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Нажать на табу 'Начинки'",
+      "time" : {
+        "start" : 1742117118437,
+        "stop" : 1742117118481,
+        "duration" : 44
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "tab",
+        "value" : "Начинки"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Проверка. Таба 'Начинки' выбранна",
+      "time" : {
+        "start" : 1742117118481,
+        "stop" : 1742117118558,
+        "duration" : 77
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "tab",
+        "value" : "Начинки"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Проверка. Ингридиент 'Мясо бессмертных моллюсков Protostomia' внутри окна браузера",
+      "time" : {
+        "start" : 1742117118559,
+        "stop" : 1742117119109,
+        "duration" : 550
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Проверка. Элемент отображается внутри окна браузера",
+        "time" : {
+          "start" : 1742117118567,
+          "stop" : 1742117119108,
+          "duration" : 541
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "driver",
+          "value" : "ChromeDriver: chrome on mac (ae7581bfdd0b7223df89a70908f5e055)"
+        }, {
+          "name" : "element",
+          "value" : "[[ChromeDriver: chrome on mac (ae7581bfdd0b7223df89a70908f5e055)] -> xpath: .//img[@alt='Мясо бессмертных моллюсков Protostomia']]"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "ingredientName",
+        "value" : "Мясо бессмертных моллюсков Protostomia"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Восстановление исходного состояния",
+      "time" : {
+        "start" : 1742117119109,
+        "stop" : 1742117119237,
+        "duration" : 128
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 7,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : ""
+  }, {
+    "name" : "testClass",
+    "value" : "ConstructorTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "openTabTest[Переход на табу Начинки]"
+  }, {
+    "name" : "suite",
+    "value" : "ConstructorTest"
+  }, {
+    "name" : "host",
+    "value" : "MacBook-Air-Paul.local"
+  }, {
+    "name" : "thread",
+    "value" : "23605@MacBook-Air-Paul.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "696b57948f879fa9.json",
+  "parameterValues" : [ ]
+}

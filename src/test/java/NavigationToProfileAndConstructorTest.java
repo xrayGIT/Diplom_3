@@ -1,7 +1,6 @@
-import client.StellarburgersClient;
+
 import io.qameta.allure.Step;
 import io.qameta.allure.junit4.DisplayName;
-import model.User;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

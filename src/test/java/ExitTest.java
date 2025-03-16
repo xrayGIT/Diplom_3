@@ -1,7 +1,6 @@
-import client.StellarburgersClient;
+
 import io.qameta.allure.Step;
 import io.qameta.allure.junit4.DisplayName;
-import model.User;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -27,6 +26,7 @@ public class ExitTest extends AbstractWebTest {
                 .clickEnterAccountButton()
                 .login(user.getEmail(), user.getPassword())
                 .clickEnterPersonalAccountButton()
+                .checkProfilePageLoaded()
                 .clickOnExitButton()
                 .checkLoginPageLoaded();
     }

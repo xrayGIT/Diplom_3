@@ -4,9 +4,11 @@ import io.qameta.allure.Step;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import validations.Validations;
 
+import java.time.Duration;
 import java.util.Objects;
-import java.util.concurrent.TimeUnit;
 
 import static helper.Environment.PAGE_URL;
 
@@ -17,11 +19,12 @@ public class MainPage{
     private static final By CREATE_ORDER_BUTTON = By.xpath("//button[text()='Оформить заказ']");
     private static final By ENTER_PERSONAL_ACCOUNT_BUTTON = By.xpath(".//p[text()='Личный Кабинет']");
     private static final By PREPARE_BURGER_HEADER = By.xpath(".//h1[text()='Соберите бургер']");
-
+    private static final String TAB_XPATH = ".//span[text()='%s']/parent::div";
+    private static final String INGREDIENT_XPATH = ".//img[@alt='%s']";
 
     public MainPage(WebDriver driver){
         this.driver = driver;
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
     }
 
     @Step("Открыть стартовую страницу")
@@ -46,6 +49,33 @@ public class MainPage{
     public LoginView clickEnterAccountButton(){
         driver.findElement(ENTER_ACCOUNT_BUTTON).click();
         return new LoginView(driver);
+    }
+
+    @Step("Нажать на табу '{0}'")
+    public MainPage clickOnTab(String tab){
+        String xpath = String.format(TAB_XPATH, tab);
+        WebElement tabElement = driver.findElement(By.xpath(xpath));
+        tabElement.click();
+        return this;
+    }
+
+    @Step("Проверка. Таба '{0}' выбранна")
+    public MainPage checkCurrentTab(String tab){
+        String xpath = String.format(TAB_XPATH, tab);
+        WebElement tabElement = driver.findElement(By.xpath(xpath));
+        boolean isTabSelected = tabElement
+                .getDomAttribute("class")
+                .contains("tab_tab_type_current__2BEPc");
+        Assert.assertTrue("Таба выбрана" , isTabSelected);
+        return this;
+    }
+
+    @Step("Проверка. Ингридиент '{0}' внутри окна браузера")
+    public MainPage checkIngredientInViewport(String ingredientName){
+        String xpath = String.format(INGREDIENT_XPATH, ingredientName);
+        WebElement ingredientElement = driver.findElement(By.xpath(xpath));
+        Validations.checkElementInViewport(driver, ingredientElement);
+        return this;
     }
 
     @Step("Нажать на кнопку 'Войти в личный кабинет'")
