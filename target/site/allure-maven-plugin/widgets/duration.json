@@ -1,0 +1,111 @@
+[ {
+  "uid" : "46a915e22024c5c4",
+  "name" : "loginUserTest[Со страницы MainPage через кнопку Войти в аккаунт]",
+  "time" : {
+    "start" : 1742117101946,
+    "stop" : 1742117105535,
+    "duration" : 3589
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "156eda86fb3d70b6",
+  "name" : "Регистрация нового пользователя",
+  "time" : {
+    "start" : 1742117084355,
+    "stop" : 1742117092455,
+    "duration" : 8100
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ed880774e94850cf",
+  "name" : "loginUserTest[Со страницы RegistrationView через кнопку Войти]",
+  "time" : {
+    "start" : 1742117109076,
+    "stop" : 1742117112595,
+    "duration" : 3519
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bbbc5fb255ce8091",
+  "name" : "loginUserTest[Со страницы MainPage через кнопку Личный кабинет]",
+  "time" : {
+    "start" : 1742117098175,
+    "stop" : 1742117101936,
+    "duration" : 3761
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d917e71ea84ebebc",
+  "name" : "Открытие страницы личного кабинета и конструктора",
+  "time" : {
+    "start" : 1742117092481,
+    "stop" : 1742117098109,
+    "duration" : 5628
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "28964cf7c279a103",
+  "name" : "openTabTest[Переход на табу Соусы]",
+  "time" : {
+    "start" : 1742117112608,
+    "stop" : 1742117114553,
+    "duration" : 1945
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "696b57948f879fa9",
+  "name" : "openTabTest[Переход на табу Начинки]",
+  "time" : {
+    "start" : 1742117116575,
+    "stop" : 1742117119237,
+    "duration" : 2662
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "103de75968d3732f",
+  "name" : "loginUserTest[Со страницы ForgotPasswordView через кнопку Войти]",
+  "time" : {
+    "start" : 1742117105548,
+    "stop" : 1742117109069,
+    "duration" : 3521
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "18772f501cbee44f",
+  "name" : "Регистрация нового пользователя с коротким паролем не возможна",
+  "time" : {
+    "start" : 1742117077096,
+    "stop" : 1742117084180,
+    "duration" : 7084
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1fce58c65e731688",
+  "name" : "openTabTest[Переход на табу Булки]",
+  "time" : {
+    "start" : 1742117114556,
+    "stop" : 1742117116572,
+    "duration" : 2016
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a60e2044a3e4b44c",
+  "name" : "Выход из аккаунта",
+  "time" : {
+    "start" : 1742117119248,
+    "stop" : 1742117123780,
+    "duration" : 4532
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

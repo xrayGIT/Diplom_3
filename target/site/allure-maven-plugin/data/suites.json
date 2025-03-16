@@ -1,0 +1,168 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "RegistrationTest",
+    "children" : [ {
+      "name" : "Регистрация нового пользователя с коротким паролем не возможна",
+      "uid" : "18772f501cbee44f",
+      "parentUid" : "69284e8223e4673c9952b238191a3c05",
+      "status" : "passed",
+      "time" : {
+        "start" : 1742117077096,
+        "stop" : 1742117084180,
+        "duration" : 7084
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Регистрация нового пользователя",
+      "uid" : "156eda86fb3d70b6",
+      "parentUid" : "69284e8223e4673c9952b238191a3c05",
+      "status" : "passed",
+      "time" : {
+        "start" : 1742117084355,
+        "stop" : 1742117092455,
+        "duration" : 8100
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "69284e8223e4673c9952b238191a3c05"
+  }, {
+    "name" : "NavigationToProfileAndConstructorTest",
+    "children" : [ {
+      "name" : "Открытие страницы личного кабинета и конструктора",
+      "uid" : "d917e71ea84ebebc",
+      "parentUid" : "fff406bc51ba152879466745e4cda8f5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1742117092481,
+        "stop" : 1742117098109,
+        "duration" : 5628
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "fff406bc51ba152879466745e4cda8f5"
+  }, {
+    "name" : "LoginTest",
+    "children" : [ {
+      "name" : "loginUserTest[Со страницы MainPage через кнопку Личный кабинет]",
+      "uid" : "bbbc5fb255ce8091",
+      "parentUid" : "b9a196f305ae86bf6bf452c18364a114",
+      "status" : "passed",
+      "time" : {
+        "start" : 1742117098175,
+        "stop" : 1742117101936,
+        "duration" : 3761
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "loginUserTest[Со страницы MainPage через кнопку Войти в аккаунт]",
+      "uid" : "46a915e22024c5c4",
+      "parentUid" : "b9a196f305ae86bf6bf452c18364a114",
+      "status" : "passed",
+      "time" : {
+        "start" : 1742117101946,
+        "stop" : 1742117105535,
+        "duration" : 3589
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "loginUserTest[Со страницы ForgotPasswordView через кнопку Войти]",
+      "uid" : "103de75968d3732f",
+      "parentUid" : "b9a196f305ae86bf6bf452c18364a114",
+      "status" : "passed",
+      "time" : {
+        "start" : 1742117105548,
+        "stop" : 1742117109069,
+        "duration" : 3521
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "loginUserTest[Со страницы RegistrationView через кнопку Войти]",
+      "uid" : "ed880774e94850cf",
+      "parentUid" : "b9a196f305ae86bf6bf452c18364a114",
+      "status" : "passed",
+      "time" : {
+        "start" : 1742117109076,
+        "stop" : 1742117112595,
+        "duration" : 3519
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "b9a196f305ae86bf6bf452c18364a114"
+  }, {
+    "name" : "ConstructorTest",
+    "children" : [ {
+      "name" : "openTabTest[Переход на табу Соусы]",
+      "uid" : "28964cf7c279a103",
+      "parentUid" : "dff0921a1606ca5407799e0b2f49c3ad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1742117112608,
+        "stop" : 1742117114553,
+        "duration" : 1945
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "openTabTest[Переход на табу Булки]",
+      "uid" : "1fce58c65e731688",
+      "parentUid" : "dff0921a1606ca5407799e0b2f49c3ad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1742117114556,
+        "stop" : 1742117116572,
+        "duration" : 2016
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "openTabTest[Переход на табу Начинки]",
+      "uid" : "696b57948f879fa9",
+      "parentUid" : "dff0921a1606ca5407799e0b2f49c3ad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1742117116575,
+        "stop" : 1742117119237,
+        "duration" : 2662
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "dff0921a1606ca5407799e0b2f49c3ad"
+  }, {
+    "name" : "ExitTest",
+    "children" : [ {
+      "name" : "Выход из аккаунта",
+      "uid" : "a60e2044a3e4b44c",
+      "parentUid" : "31276ed5b9f323fd9890bf562bd7263f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1742117119248,
+        "stop" : 1742117123780,
+        "duration" : 4532
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "31276ed5b9f323fd9890bf562bd7263f"
+  } ],
+  "name" : "suites"
+}
